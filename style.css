@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,19 +21,19 @@ html {
     overflow-x: hidden;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 10rem 9% 2 rem;
 }
 
 
 /*Header Section Code*/
-.header{
+.header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,7 +48,7 @@ section{
     transition: all 0.5s;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: var(--bg-color);
     font-weight: 700;
@@ -62,18 +62,18 @@ section{
 
 .navbar a {
     font-size: 1.9rem;
-    color:var(--bg-color);
+    color: var(--bg-color);
     margin-left: 4rem;
     font-weight: 700;
     transition: 0.3 ease;
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: yellow;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
     color: var(--bg-color);
     cursor: pointer;
@@ -82,13 +82,13 @@ section{
 
 /*Home section design*/
 
-.home{
+.home {
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
-.home-img img{
+.home-img img {
     width: 25vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -97,25 +97,27 @@ section{
     transition: 0.4s ease;
 }
 
-.home-img img:hover{
+.home-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
-                0 0 35px var(--main-color),
-                0 0 45px var(--main-color);
+        0 0 35px var(--main-color),
+        0 0 45px var(--main-color);
 }
 
 @keyframes floatImage {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-2.4rem);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-.home-content{
+.home-content {
     margin-left: 5rem;
 }
 
@@ -124,11 +126,11 @@ section{
     font-weight: 700;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
 
-span{
+span {
     color: var(--main-color);
 }
 
@@ -138,13 +140,13 @@ span{
     line-height: 1.3;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
     text-align: left;
     margin: 0 auto;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +161,7 @@ span{
     transition: 0.3s ease;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     transform: scale(1.2) translateY(-10px);
     background-color: var(--main-color);
     color: var(--bg-color);
@@ -179,72 +181,194 @@ span{
     transition: 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: 0 0 1.6rem var(--main-color);
 }
 
 /*about.html*/
 .about {
-  padding: 80px 20px;
-  background-color: #f9f9f9;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
 }
 
 .about-container {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
-.about h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .about p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
 }
 
 .about-profile {
-  padding: 60px 20px;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .profile-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .profile-image img {
-  width: 250px;
-  border-radius: 50%;
-  border: 4px solid #ccc;
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid var(--main-color);
+    align-content: center;
 }
 
 .profile-text {
-  flex: 1;
+    flex: 1000;
 }
 
 .profile-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #333;
+    font-size: 5rem;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .profile-text p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.7;
+    font-size: 2rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/*2nd part of about me*/
+/* Subheading with minimal spacing */
+.subheading h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Alternating Image-Text Layout */
+.story-block {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.story-block p {
+    font-size: 2rem !important;
+    line-height: 3;
+}
+
+.story-block img {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.left-img {
+    order: 1;
+}
+
+.right-img {
+    order: 2;
+}
+
+.story-block p {
+    flex: 1;
+    min-width: 280px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Gallery Layout like Facebook albums */
+.galleryTitle h3 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px; /* space between images */
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+ /* Fullscreen overlay style */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  cursor: pointer;
+}
+
+.about-extension {
+    background-color: #fafafa;
+    padding: 8rem 5% 6rem;
 }
 
 
+
+
+/*Projects.html*/
+.section-title {
+    text-align: center;
+    padding: 100px 20px 20px;
+    /*push down below header */
+}
+
+.section-title h1 {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.section-title p {
+    font-size: 3rem;
+    color: #666;
+}
 
 /* Main Video Gallery */
 main.video-gallery {
@@ -253,7 +377,8 @@ main.video-gallery {
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 140px 20px 40px; /* padding-top accounts for fixed header */
+    padding: 140px 20px 40px;
+    /* padding-top accounts for fixed header */
 }
 
 /* Each video card */
@@ -282,12 +407,12 @@ main.video-gallery {
 
 .video-card h3 {
     margin-top: 12px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #111;
 }
 
 .video-card p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #555;
     margin-top: 6px;
 }
