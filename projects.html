@@ -2,81 +2,459 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects — Jeric Mark Caño</title>
+    <meta name="description"
+        content="Selected work by Jeric Mark Caño — video edits for church and community events, photography, design, and programming projects.">
+    <meta name="theme-color" content="#070b14">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects — Jeric Mark Caño">
+    <meta property="og:description"
+        content="Video edits, photography, design, and code — a showcase of work for church and community events.">
+    <meta property="og:image" content="img/opt/gallery2.jpg">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a1220'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='25' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
 </head>
 
-<body>
-    <!-- Header Section -->
+<body id="top">
+
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+        </symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </symbol>
+        <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="6 4 20 12 6 20 6 4" />
+        </symbol>
+        <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+        </symbol>
+        <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="23 7 16 12 23 17 23 7" />
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+        </symbol>
+        <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+        </symbol>
+        <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+        </symbol>
+        <symbol id="i-maximize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob--one"></div>
+        <div class="blob blob--two"></div>
+        <div class="blob blob--three"></div>
+    </div>
+
     <header class="header">
-        <a href="index.html" class="logo">Jeric Mark Caño</a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html" class="active">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Jeric Mark Caño — Home">
+                <span class="logo-mark" aria-hidden="true">JC</span>
+                <span class="logo-text">Jeric Mark <b>Caño</b></span>
+            </a>
+            <nav class="nav" id="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="#contact">Contact</a>
+                <a class="btn btn--primary btn--sm nav-resume" href="files/Cano-Resume.pdf" target="_blank"
+                    rel="noopener">
+                    Résumé
+                    <svg aria-hidden="true" focusable="false"><use href="#i-download" /></svg>
+                </a>
+            </nav>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
-    <nav class="section-title">
-        <h1>🎬 My Video Editing Projects</h1>
-        <p>A showcase of the videos I edited for church and community events.</p>
-    </nav>
+    <main id="main">
 
-    <main class="video-gallery">
-        <div class="video-card">
-            <iframe src="https://drive.google.com/file/d/18il5edRPewyguKUYobNvPperTGA_eXRg/preview" width="640"
-                height="360" allow="autoplay" allowfullscreen></iframe>
-            <h3>Proposal Video</h3>
-            <p>Preview of the proposal video content.</p>
-        </div>
+        <!-- Page hero -->
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow reveal">Selected work</p>
+                <h1 class="reveal" style="--d:80ms">Videos, frames, and <span class="grad-text">code</span>.</h1>
+                <p class="lede reveal" style="--d:160ms">
+                    A showcase of video edits for church and community events, photography from the field, and
+                    programming work — each piece built to communicate clearly and honestly.
+                </p>
+            </div>
+        </section>
 
-        <div class="video-card">
-            <iframe src="https://drive.google.com/file/d/1ymDcswPQG_1m0qVff0Gtlu2ggLy4e6_f/preview" width="640"
-                height="360" allow="autoplay" allowfullscreen></iframe>
-            <h3>Vacation Bible School 2024</h3>
-            <p>A week of fun and learning about Jesus</p>
-        </div>
+        <!-- Video projects -->
+        <section class="section section--tight" id="videos">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Video editing</p>
+                        <h2>Stories in motion.</h2>
+                    </div>
+                    <p>Highlight reels and event films edited for church and community programs. Select a cover to
+                        load and play the video.</p>
+                </div>
 
-        <div class="video-card">
-            <iframe src="https://drive.google.com/file/d/17ye1W4ZlgXjRj3mStm4EWIz87OMKn4Ww/preview" width="640"
-                height="360" allow="autoplay" allowfullscreen></iframe>
-            <h3>ZEAL 2024</h3>
-            <p>Youth fellowship event with worship and games</p>
-        </div>
+                <div class="video-grid">
+                    <article class="video-card card reveal" data-video="18il5edRPewyguKUYobNvPperTGA_eXRg"
+                        data-title="Proposal Video" style="--d:0ms">
+                        <div class="video-media" style="--tint:45,212,191;--tint-2:34,211,238">
+                            <img src="https://drive.google.com/thumbnail?id=18il5edRPewyguKUYobNvPperTGA_eXRg&amp;sz=w1000"
+                                alt="Proposal video cover" loading="lazy" onerror="this.remove()">
+                            <span class="video-tag">Google Drive</span>
+                            <span class="ghost-num" aria-hidden="true">01</span>
+                            <button class="play" type="button" aria-label="Play Proposal Video">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-play" /></svg>
+                            </button>
+                        </div>
+                        <div class="video-body">
+                            <h3>Proposal Video</h3>
+                            <p>A preview of the proposal video content.</p>
+                            <a class="video-meta" href="https://drive.google.com/file/d/18il5edRPewyguKUYobNvPperTGA_eXRg/view"
+                                target="_blank" rel="noopener">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                                Open in Google Drive
+                            </a>
+                        </div>
+                    </article>
 
-        <div class="video-card">
-            <iframe src="https://drive.google.com/file/d/12baj4HAgReIpuqCSGlOwyEzdhqXecuTJ/preview" width="640"
-                height="360" allow="autoplay" allowfullscreen></iframe>
-            <h3>Miss Teen Sto. Angel</h3>
-            <p>A community celebration and youth pageant</p>
-        </div>
+                    <article class="video-card card reveal" data-video="1ymDcswPQG_1m0qVff0Gtlu2ggLy4e6_f"
+                        data-title="Vacation Bible School 2024" style="--d:80ms">
+                        <div class="video-media" style="--tint:34,211,238;--tint-2:45,212,191">
+                            <span class="video-tag">Google Drive</span>
+                            <span class="ghost-num" aria-hidden="true">02</span>
+                            <button class="play" type="button" aria-label="Play Vacation Bible School 2024">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-play" /></svg>
+                            </button>
+                        </div>
+                        <div class="video-body">
+                            <h3>Vacation Bible School 2024</h3>
+                            <p>A week of fun and learning about Jesus.</p>
+                            <a class="video-meta" href="https://drive.google.com/file/d/1ymDcswPQG_1m0qVff0Gtlu2ggLy4e6_f/view"
+                                target="_blank" rel="noopener">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                                Open in Google Drive
+                            </a>
+                        </div>
+                    </article>
 
-        <div class="video-card">
-            <iframe src="https://drive.google.com/file/d/1WiNfksoVu-9IwI-IUUEZb1d6wXUobEfa/preview" width="640"
-                height="360" allow="autoplay" allowfullscreen></iframe>
-            <h3>Illuminate</h3>
-            <p>Calvary Chapel Youth Camp 2025 highlights and testimonies</p>
-        </div>
+                    <article class="video-card card reveal" data-video="17ye1W4ZlgXjRj3mStm4EWIz87OMKn4Ww"
+                        data-title="ZEAL 2024" style="--d:0ms">
+                        <div class="video-media" style="--tint:129,140,248;--tint-2:34,211,238">
+                            <span class="video-tag">Google Drive</span>
+                            <span class="ghost-num" aria-hidden="true">03</span>
+                            <button class="play" type="button" aria-label="Play ZEAL 2024">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-play" /></svg>
+                            </button>
+                        </div>
+                        <div class="video-body">
+                            <h3>ZEAL 2024</h3>
+                            <p>Youth fellowship event with worship and games.</p>
+                            <a class="video-meta" href="https://drive.google.com/file/d/17ye1W4ZlgXjRj3mStm4EWIz87OMKn4Ww/view"
+                                target="_blank" rel="noopener">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                                Open in Google Drive
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="video-card card reveal" data-video="12baj4HAgReIpuqCSGlOwyEzdhqXecuTJ"
+                        data-title="Miss Teen Sto. Angel" style="--d:80ms">
+                        <div class="video-media" style="--tint:56,189,248;--tint-2:129,140,248">
+                            <span class="video-tag">Google Drive</span>
+                            <span class="ghost-num" aria-hidden="true">04</span>
+                            <button class="play" type="button" aria-label="Play Miss Teen Sto. Angel">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-play" /></svg>
+                            </button>
+                        </div>
+                        <div class="video-body">
+                            <h3>Miss Teen Sto. Angel</h3>
+                            <p>A community celebration and youth pageant.</p>
+                            <a class="video-meta" href="https://drive.google.com/file/d/12baj4HAgReIpuqCSGlOwyEzdhqXecuTJ/view"
+                                target="_blank" rel="noopener">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                                Open in Google Drive
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="video-card card reveal" data-video="1WiNfksoVu-9IwI-IUUEZb1d6wXUobEfa"
+                        data-title="Illuminate" style="--d:0ms">
+                        <div class="video-media" style="--tint:94,234,212;--tint-2:34,211,238">
+                            <span class="video-tag">Google Drive</span>
+                            <span class="ghost-num" aria-hidden="true">05</span>
+                            <button class="play" type="button" aria-label="Play Illuminate">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-play" /></svg>
+                            </button>
+                        </div>
+                        <div class="video-body">
+                            <h3>Illuminate</h3>
+                            <p>Calvary Chapel Youth Camp 2025 highlights and testimonies.</p>
+                            <a class="video-meta" href="https://drive.google.com/file/d/1WiNfksoVu-9IwI-IUUEZb1d6wXUobEfa/view"
+                                target="_blank" rel="noopener">
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                                Open in Google Drive
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography -->
+        <section class="section" id="photography">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Photography &amp; design</p>
+                        <h2>Frames from the field.</h2>
+                    </div>
+                    <a class="btn btn--ghost btn--sm" href="about.html#gallery">
+                        Open full gallery
+                        <svg aria-hidden="true" focusable="false"><use href="#i-arrow-right" /></svg>
+                    </a>
+                </div>
+
+                <div class="strip reveal" style="--d:80ms" tabindex="0" aria-label="Photography gallery">
+                    <figure>
+                        <img src="img/opt/gallery2.jpg" alt="Editing video footage at a laptop" width="1600"
+                            height="1067" loading="lazy">
+                        <figcaption>In the edit suite</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/opt/gallery4.jpg" alt="Miss Teen Sto. Angel pageant" width="1600" height="1200"
+                            loading="lazy">
+                        <figcaption>Miss Teen Sto. Angel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/opt/gallery6.jpg" alt="Community outreach program" width="1600" height="1153"
+                            loading="lazy">
+                        <figcaption>Community outreach</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/opt/gallery5.jpg" alt="Work Student Organization event" width="1600"
+                            height="1067" loading="lazy">
+                        <figcaption>Work Student Organization</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/opt/gallery1.jpg" alt="CPU alumni homecoming group photo" width="1600"
+                            height="1067" loading="lazy">
+                        <figcaption>Alumni homecoming</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/opt/gallery3.jpg" alt="Church community gathering" width="1600" height="1066"
+                            loading="lazy">
+                        <figcaption>Church community</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming -->
+        <section class="section" id="programming">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Programming</p>
+                        <h2>Code &amp; craft.</h2>
+                    </div>
+                    <p>Projects and experiments where I put web fundamentals, networking, and security learning into
+                        practice.</p>
+                </div>
+
+                <div class="code-grid">
+                    <div class="stack">
+                        <article class="repo-card card reveal" style="--d:0ms">
+                            <div class="repo-head">
+                                <span class="icon-tile">
+                                    <svg aria-hidden="true" focusable="false"><use href="#i-code" /></svg>
+                                </span>
+                                <div>
+                                    <h3>This portfolio</h3>
+                                    <p class="repo-meta">HTML · CSS · JavaScript</p>
+                                </div>
+                            </div>
+                            <p>
+                                A fully responsive, accessible portfolio built from scratch — custom design system,
+                                scroll animations, and a keyboard-friendly image lightbox. No frameworks.
+                            </p>
+                            <div class="chip-row">
+                                <span class="chip">Semantic HTML</span>
+                                <span class="chip">Modern CSS</span>
+                                <span class="chip">Vanilla JS</span>
+                                <span class="chip">Accessibility</span>
+                            </div>
+                            <a class="link-arrow" href="https://github.com/jericmark46/jericmark46.github.io"
+                                target="_blank" rel="noopener">
+                                View source
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                            </a>
+                        </article>
+
+                        <article class="repo-card card reveal" style="--d:100ms">
+                            <div class="repo-head">
+                                <span class="icon-tile">
+                                    <svg aria-hidden="true" focusable="false"><use href="#i-github" /></svg>
+                                </span>
+                                <div>
+                                    <h3>GitHub</h3>
+                                    <p class="repo-meta">@jericmark46</p>
+                                </div>
+                            </div>
+                            <p>
+                                Exercises, coursework, and experiments as I keep building on JavaScript, networking,
+                                and cybersecurity fundamentals.
+                            </p>
+                            <div class="chip-row">
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Networking</span>
+                                <span class="chip">Cybersecurity</span>
+                            </div>
+                            <a class="link-arrow" href="https://github.com/jericmark46" target="_blank" rel="noopener">
+                                Visit GitHub
+                                <svg aria-hidden="true" focusable="false"><use href="#i-external" /></svg>
+                            </a>
+                        </article>
+                    </div>
+
+                    <aside class="skill-panel reveal" style="--d:160ms" aria-label="Toolbox">
+                        <h3>Toolbox</h3>
+                        <div class="skill-group">
+                            <h4>Frontend</h4>
+                            <div class="chip-row">
+                                <span class="chip">HTML5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Responsive design</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Networking</h4>
+                            <div class="chip-row">
+                                <span class="chip">Cisco fundamentals</span>
+                                <span class="chip">CCNA coursework</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Security</h4>
+                            <div class="chip-row">
+                                <span class="chip">Cybersecurity fundamentals</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Media</h4>
+                            <div class="chip-row">
+                                <span class="chip">Video editing</span>
+                                <span class="chip">Photography</span>
+                                <span class="chip">Graphic design</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's create something that matters.</h2>
+                    <p>
+                        I'm open to opportunities in IT support, multimedia production, web development, and
+                        community-driven projects. The fastest way to reach me is on LinkedIn.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="btn btn--primary" href="https://www.linkedin.com/in/jeric-mark-ca%C3%B1o-b09666157/"
+                            target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-linkedin" /></svg>
+                            Connect on LinkedIn
+                        </a>
+                        <a class="btn btn--ghost" href="https://github.com/jericmark46" target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-github" /></svg>
+                            GitHub
+                        </a>
+                        <a class="btn btn--ghost" href="https://www.facebook.com/j3r1c.kr4m" target="_blank"
+                            rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-facebook" /></svg>
+                            Facebook
+                        </a>
+                        <a class="btn btn--ghost" href="files/Cano-Resume.pdf" target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-download" /></svg>
+                            Résumé
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-
-    
-    <nav class="section-title">
-        <h1>🎬 My Design Area</h1>
-        <p>A showcase of the videos I edited for church and community events.</p>
-    </nav>
-
-    <nav class="section-title">
-        <h1>🎬 My Programming Projects</h1>
-        <p>A showcase of the videos I edited for church and community events.</p>
-    </nav>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Jeric Mark C. Caño. All rights reserved.</p>
+            <a class="to-top" href="#top">
+                Back to top
+                <svg aria-hidden="true" focusable="false"><use href="#i-arrow-up" /></svg>
+            </a>
+        </div>
+    </footer>
 
 </body>
 

@@ -2,101 +2,426 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-    <title>About - Jeric Mark Caño</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Jeric Mark Caño</title>
+    <meta name="description"
+        content="About Jeric Mark C. Caño — BS Information Technology student at Central Philippine University, IT professional, multimedia creator, and student leader.">
+    <meta name="theme-color" content="#070b14">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="About — Jeric Mark Caño">
+    <meta property="og:description"
+        content="A technologist with a heart for service: IT support, multimedia production, leadership, and mission-driven work.">
+    <meta property="og:image" content="img/opt/jeric2.jpg">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a1220'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='25' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EJC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
 </head>
 
-<body>
-    <!-- Header Section -->
+<body id="top">
+
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+        </symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </symbol>
+        <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7" />
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+        </symbol>
+        <symbol id="i-maximize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+        </symbol>
+        <symbol id="i-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+        </symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+        </symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="blob blob--one"></div>
+        <div class="blob blob--two"></div>
+        <div class="blob blob--three"></div>
+    </div>
+
     <header class="header">
-        <a href="index.html" class="logo">Jeric Mark Caño</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Jeric Mark Caño — Home">
+                <span class="logo-mark" aria-hidden="true">JC</span>
+                <span class="logo-text">Jeric Mark <b>Caño</b></span>
+            </a>
+            <nav class="nav" id="nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="#contact">Contact</a>
+                <a class="btn btn--primary btn--sm nav-resume" href="files/Cano-Resume.pdf" target="_blank"
+                    rel="noopener">
+                    Résumé
+                    <svg aria-hidden="true" focusable="false"><use href="#i-download" /></svg>
+                </a>
+            </nav>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section class="home" id="home">
-        <div class="profile-container">
-            <div class="profile-image">
-                <img src="img/jeric2.jpg" alt="Jeric Mark Caño">
-            </div>
-            <div class="profile-text">
-                <h2>About Me</h2>
-                <p>
-                    Hello! I’m Jeric Mark C. Caño — a passionate and committed IT professional with a heart for service
-                    and leadership. I’m currently pursuing a Bachelor of Science in Information Technology at Central
-                    Philippine University, where I’ve not only honed my technical skills in networking, web development,
-                    and cybersecurity but also served in various leadership roles. My experience ranges from IT
-                    maintenance and clerical support at the Guidance Services Center to facilitating team-building
-                    events and community programs with Goducate. I’ve led multiple student organizations, including the
-                    Work Student Organization and Campus Bible Fellowship, where I developed strong interpersonal and
-                    project management skills. As a CCNA completer and a certified learner in JavaScript Essentials and
-                    Cybersecurity, I am deeply invested in continuous learning and using technology to inspire and
-                    uplift others. My ultimate goal is to combine technical expertise with mission-driven service to
-                    make a meaningful impact in my community and beyond.
+    <main id="main">
+
+        <!-- Page hero -->
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow reveal">About me</p>
+                <h1 class="reveal" style="--d:80ms">A technologist with a <span class="grad-text">heart for
+                        service</span>.</h1>
+                <p class="lede reveal" style="--d:160ms">
+                    IT professional, student leader, and multimedia storyteller — committed to using technology and
+                    creativity to serve people and tell stories that matter.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about-extension">
-        <div class="subheading">
-            <h2>My Journey & Highlights</h2>
-        </div>
+        <!-- Bio -->
+        <section class="section section--tight">
+            <div class="container about-grid">
+                <figure class="about-photo reveal">
+                    <img src="img/opt/jeric2.jpg" alt="Graduation portrait of Jeric Mark Caño" width="1200"
+                        height="1620" loading="lazy">
+                    <figcaption>
+                        <span>Jeric Mark C. Caño</span>
+                        <span>Iloilo, Philippines</span>
+                    </figcaption>
+                </figure>
 
-        <!-- Story Blocks -->
-        <div class="story-block">
-            <img src="img/story1.jpg" alt="Community Involvement" class="left-img">
-            <p>
-                From leading campus organizations to volunteering in tech missions, I've always found joy in serving and
-                building alongside others.
-            </p>
-        </div>
+                <div class="about-copy reveal" style="--d:120ms">
+                    <h2>Hello — I'm Jeric Mark.</h2>
+                    <p>
+                        A passionate and committed IT professional with a heart for service and leadership. I'm
+                        currently pursuing a <strong>Bachelor of Science in Information Technology</strong> at
+                        Central Philippine University, where I've honed my skills in networking, web development, and
+                        cybersecurity while serving in various leadership roles.
+                    </p>
+                    <p>
+                        My experience ranges from IT maintenance and clerical support at the <strong>Guidance Services
+                            Center</strong> to facilitating team-building events and community programs with
+                        <strong>Goducate</strong>. I've led multiple student organizations, including the
+                        <strong>Work Student Organization</strong> and <strong>Campus Bible Fellowship</strong>, where
+                        I developed strong interpersonal and project-management skills.
+                    </p>
+                    <p>
+                        As a CCNA completer and a certified learner in JavaScript Essentials and Cybersecurity, I'm
+                        deeply invested in continuous learning and using technology to inspire and uplift others. My
+                        goal is to combine technical expertise with mission-driven service to make a meaningful impact
+                        in my community and beyond.
+                    </p>
 
-        <div class="story-block">
-            <img src="img/story2.jpg" alt="Leadership Role" class="right-img">
-            <p>
-                As a student leader, I learned how to guide teams, make strategic decisions, and communicate vision with
-                clarity and compassion.
-            </p>
-        </div>
+                    <div class="facts">
+                        <div class="fact">
+                            <small>Education</small>
+                            <strong>BS Information Technology<br>Central Philippine University</strong>
+                        </div>
+                        <div class="fact">
+                            <small>Certifications</small>
+                            <strong>CCNA completer · JavaScript Essentials · Cybersecurity</strong>
+                        </div>
+                        <div class="fact">
+                            <small>Leadership</small>
+                            <strong>Work Student Organization · Campus Bible Fellowship</strong>
+                        </div>
+                        <div class="fact">
+                            <small>Experience</small>
+                            <strong>Guidance Services Center · Goducate volunteer</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="story-block">
-            <img src="img/story3.jpg" alt="Mission Work" class="left-img">
-            <p>
-                My experiences on the mission field strengthened my faith and shaped my desire to use digital skills for
-                a higher purpose.
-            </p>
-        </div>
+        <!-- Journey -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">My journey</p>
+                        <h2>Highlights along the way.</h2>
+                    </div>
+                    <p>Leadership, service, and faith have shaped the way I work — with intention, empathy, and a
+                        long-term view.</p>
+                </div>
 
-        <!-- Image Gallery -->
-        <div class="galleryTitle">
-            <h3>Gallery</h3>
+                <div class="story-grid">
+                    <article class="story reveal" style="--d:0ms">
+                        <div class="story-media">
+                            <img src="img/opt/story1.jpg" alt="Campus Bible Fellowship group gathering" width="1200"
+                                height="900" loading="lazy">
+                            <span class="story-num">01</span>
+                        </div>
+                        <div class="story-body">
+                            <h3>Community &amp; service</h3>
+                            <p>
+                                From leading campus organizations to volunteering in tech missions, I've always found
+                                joy in serving and building alongside others.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="story reveal" style="--d:100ms">
+                        <div class="story-media">
+                            <img src="img/opt/story2.jpg" alt="Jeric with a mentor after a graduation ceremony"
+                                width="1000" height="1333" loading="lazy">
+                            <span class="story-num">02</span>
+                        </div>
+                        <div class="story-body">
+                            <h3>Leadership in practice</h3>
+                            <p>
+                                As a student leader, I learned how to guide teams, make strategic decisions, and
+                                communicate a vision with clarity and compassion.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="story reveal" style="--d:200ms">
+                        <div class="story-media">
+                            <img src="img/opt/story3.jpg" alt="Mission outreach visit with a family in the community"
+                                width="1400" height="1050" loading="lazy">
+                            <span class="story-num">03</span>
+                        </div>
+                        <div class="story-body">
+                            <h3>Mission &amp; faith</h3>
+                            <p>
+                                My experiences on the mission field strengthened my faith and shaped my desire to use
+                                digital skills for a higher purpose.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section" id="gallery">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Gallery</p>
+                        <h2>Moments &amp; milestones.</h2>
+                    </div>
+                    <p>Frames from events, organizations, and community work. Click any photo to view it full screen.</p>
+                </div>
+
+                <div class="gallery reveal" style="--d:80ms">
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery1.jpg"
+                        data-caption="Alumni homecoming — CPU gym"
+                        aria-label="View image: Alumni homecoming at the CPU gym">
+                        <img src="img/opt/gallery1.jpg" alt="Large group photo at the CPU alumni homecoming"
+                            width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>Alumni homecoming</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery2.jpg"
+                        data-caption="Editing a story, frame by frame"
+                        aria-label="View image: Editing a video at a laptop">
+                        <img src="img/opt/gallery2.jpg" alt="Jeric editing video footage on a laptop with headphones"
+                            width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>In the edit suite</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery4.jpg"
+                        data-caption="Miss Teen Sto. Angel"
+                        aria-label="View image: Miss Teen Sto. Angel pageant">
+                        <img src="img/opt/gallery4.jpg" alt="Pageant winner in a yellow gown with the organizing team"
+                            width="1600" height="1200" loading="lazy">
+                        <figcaption>
+                            <span>Miss Teen Sto. Angel</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery3.jpg"
+                        data-caption="Church community gathering"
+                        aria-label="View image: Church community group photo">
+                        <img src="img/opt/gallery3.jpg" alt="Congregation group photo inside a church" width="1600"
+                            height="1066" loading="lazy">
+                        <figcaption>
+                            <span>Church community</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery5.jpg"
+                        data-caption="Work Student Organization — Paghili-ugyon"
+                        aria-label="View image: Work Student Organization event">
+                        <img src="img/opt/gallery5.jpg" alt="Work Student Organization members at the Paghili-ugyon event"
+                            width="1600" height="1067" loading="lazy">
+                        <figcaption>
+                            <span>Work Student Organization</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery6.jpg"
+                        data-caption="Community outreach — Empowering Communities"
+                        aria-label="View image: Community outreach speaking engagement">
+                        <img src="img/opt/gallery6.jpg" alt="Jeric speaking at a community outreach program" width="1600"
+                            height="1153" loading="lazy">
+                        <figcaption>
+                            <span>Community outreach</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="g-item" tabindex="0" role="button" data-full="img/opt/gallery2-1.jpg"
+                        data-caption="On the timeline at the edit station"
+                        aria-label="View image: Video editing workstation">
+                        <img src="img/opt/gallery2-1.jpg" alt="Video editing workstation with camera gear in the background"
+                            width="1600" height="1066" loading="lazy">
+                        <figcaption>
+                            <span>At the edit station</span>
+                            <span class="zoom"><svg aria-hidden="true" focusable="false"><use
+                                        href="#i-maximize" /></svg></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's create something that matters.</h2>
+                    <p>
+                        I'm open to opportunities in IT support, multimedia production, web development, and
+                        community-driven projects. The fastest way to reach me is on LinkedIn.
+                    </p>
+                    <div class="contact-actions">
+                        <a class="btn btn--primary" href="https://www.linkedin.com/in/jeric-mark-ca%C3%B1o-b09666157/"
+                            target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-linkedin" /></svg>
+                            Connect on LinkedIn
+                        </a>
+                        <a class="btn btn--ghost" href="https://github.com/jericmark46" target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-github" /></svg>
+                            GitHub
+                        </a>
+                        <a class="btn btn--ghost" href="https://www.facebook.com/j3r1c.kr4m" target="_blank"
+                            rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-facebook" /></svg>
+                            Facebook
+                        </a>
+                        <a class="btn btn--ghost" href="files/Cano-Resume.pdf" target="_blank" rel="noopener">
+                            <svg aria-hidden="true" focusable="false"><use href="#i-download" /></svg>
+                            Résumé
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Jeric Mark C. Caño. All rights reserved.</p>
+            <a class="to-top" href="#top">
+                Back to top
+                <svg aria-hidden="true" focusable="false"><use href="#i-arrow-up" /></svg>
+            </a>
         </div>
-        <!-- Gallery Images -->
-        <div class="gallery">
-            <img src="img/gallery1.jpg" alt="Gallery Image 1">
-            <img src="img/gallery2.jpeg" alt="Gallery Image 2">
-            <img src="img/gallery3.jpg" alt="Gallery Image 3">
-            <img src="img/gallery4.jpg" alt="Gallery Image 4">
-            <img src="img/gallery5.jpg" alt="Gallery Image 5">
-            <img src="img/gallery6.jpg" alt="Gallery Image 6">
-            <img src="img/gallery2-1.jpg" alt="Gallery Image 6">
-        </div>
-        <!-- Fullscreen Overlay -->
-        <div id="fullscreenOverlay">
-            <img id="fullscreenImage" src="" alt="Fullscreen View">
-        </div>
-    </section>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <div class="lightbox-backdrop" data-lightbox-close></div>
+        <span class="lightbox-count" id="lightbox-count" aria-live="polite"></span>
+        <button class="lightbox-btn lightbox-close" type="button" aria-label="Close viewer" data-lightbox-close>
+            <svg aria-hidden="true" focusable="false"><use href="#i-close" /></svg>
+        </button>
+        <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous image">
+            <svg aria-hidden="true" focusable="false"><use href="#i-chevron-left" /></svg>
+        </button>
+        <figure class="lightbox-figure">
+            <img id="lightbox-image"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-btn lightbox-next" type="button" aria-label="Next image">
+            <svg aria-hidden="true" focusable="false"><use href="#i-chevron-right" /></svg>
+        </button>
+    </div>
+
 </body>
 
 </html>
