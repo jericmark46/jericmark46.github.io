@@ -1,0 +1,21 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: main
+nodes_managed: true
+exported_at: "2026-11-12T08:36:12Z"
+modules:
+    "":
+        dir_name: Jeric Mark Caño — Personal Portfolio Site
+        title: Jeric Mark Caño — Personal Portfolio Site
+        scope:
+            - index.html
+            - about.html
+            - projects.html
+            - script.js
+            - style.css
+            - .gitignore
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

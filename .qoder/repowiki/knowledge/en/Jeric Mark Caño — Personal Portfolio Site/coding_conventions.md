@@ -1,0 +1,6 @@
+- Icons are defined as `<symbol>` entries inside a single inline `<svg class="svg-sprite">` block per page and consumed through `<use href="#i-<name>"/>` references.
+- All visual tokens (colors, gradients, fonts, radii, spacing) are declared as CSS custom properties on `:root` and reused throughout the stylesheet rather than hard-coded.
+- Interactive elements carry explicit accessibility attributes: `aria-hidden="true"` on decorative SVGs, `aria-label` on social links, `aria-expanded` toggled on the mobile nav button, and `aria-current="page"` on the active nav link.
+- Animations and heavy interactions are gated behind `prefers-reduced-motion` checks (e.g., reveal-on-scroll falls back to adding `.is-in` immediately, spotlight effects are skipped).
+- External third-party scripts (Typed.js, Google Fonts) are loaded with `defer` / `preconnect` to avoid blocking render, and JS files use `defer` as well.
+- JavaScript is encapsulated in a top-level IIFE with `"use strict"` and uses small helper functions `$` / `$$` for scoped DOM queries.

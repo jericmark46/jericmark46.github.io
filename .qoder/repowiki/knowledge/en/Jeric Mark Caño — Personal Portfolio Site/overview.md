@@ -1,0 +1,1 @@
+Static personal portfolio website for Jeric Mark C. Caño, showcasing IT, video editing, photography, and web development work across three HTML pages with a shared dark design system.

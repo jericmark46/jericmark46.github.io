@@ -1,0 +1,1 @@
+No build toolchain — deploy by pushing the repository to GitHub and enabling GitHub Pages for the repo. Static assets (resume PDF, images) live under `files/` and `img/opt/` respectively and must be committed alongside the HTML/CSS/JS.

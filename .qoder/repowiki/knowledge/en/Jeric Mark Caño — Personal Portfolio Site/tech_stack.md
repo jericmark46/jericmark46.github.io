@@ -1,0 +1,1 @@
+Plain HTML5 + CSS3 + vanilla JavaScript (ES6+); Google Fonts (Inter, Space Grotesk); Typed.js loaded from `vendor/typed.umd.js`; hosted on GitHub Pages; uses Schema.org Person JSON-LD and Open Graph/Twitter meta tags for SEO.
